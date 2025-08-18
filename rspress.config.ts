@@ -9,8 +9,9 @@ export default defineConfig({
     light: '/logo-light.png',
     dark: '/logo-dark.png',
   },
+  base: '/docs/',
   ssg: true,
-  lang: 'zh',
+  lang: 'en',
   locales: [
     {
       lang: 'zh',
