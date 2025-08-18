@@ -1,0 +1,25 @@
+[
+  {
+    "text": "Guide",
+    "link": "/guide/index",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "Version",
+    "link": "/version",
+    "activeMatch": "/version"
+  },
+  {
+    "text": "More",
+    "items": [
+      {
+        "text": "amis",
+        "link": "https://aisuda.bce.baidu.com/amis/zh-CN/components/page"
+      },
+      {
+        "text": "adonisjs",
+        "link": "https://docs.adonisjs.com/guides/preface/introduction"
+      }
+    ]
+  }
+]

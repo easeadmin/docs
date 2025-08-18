@@ -1,0 +1,8 @@
+[
+    "router",
+    "admin",
+    "command",
+    "component",
+    "controller",
+    "repository"
+]
