@@ -84,3 +84,18 @@ export default class MyController extends ResourceController {
 | footerToolbar() | 构建底部工具栏 |
 | actions() | 构建行操作按钮 |
 | operations() | 构建行操作列 |
+
+## 资源控制器属性表
+
+|     名称      |    默认值    |    功能描述    |
+| :---------- | :----------------- |:----------------- |
+| showOperations | true | 显示行操作 |
+| showCreateButton | true | 显示新增按钮 |
+| showDetailButton | true | 显示详情按钮 |
+| showEditButton | true | 显示编辑按钮 |
+| showDeleteButton | true | 显示删除按钮 |
+| showBulkDeleteButton | true | 显示批量删除按钮 |
+| showFilterToggler | true | 显示筛选器切换按钮 |
+| showBulkActions | true | 显示批量操作工具栏 |
+| repository | 无 | 资源仓库 |
+| defaultParams | { orderBy: 'id', orderDir: 'desc' } | 默认请求参数 |

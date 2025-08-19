@@ -11,7 +11,7 @@ export default defineConfig({
   },
   base: '/docs/',
   ssg: true,
-  lang: 'en',
+  lang: 'zh',
   locales: [
     {
       lang: 'zh',

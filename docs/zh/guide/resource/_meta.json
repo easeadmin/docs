@@ -2,5 +2,9 @@
     "fields",
     "forms",
     "filters",
-    "actions"
+    "actions",
+    "toolbar",
+    "detail",
+    "creator",
+    "editor"
 ]
