@@ -97,7 +97,7 @@ import amis from 'easeadmin/builder/amis'
 import html from 'easeadmin/builder/html'
 
 // Set page title
-let page = amis('page').title('Weclome')
+let page = amis('page').title('Welcome')
 
 // In page body place a button
 page.body(amis('button').label('Hello World').level('primary'))
@@ -122,17 +122,17 @@ second.permission(false)
 
 // Render as HTML
 html(page, {
-    title: string //页面标题
-    host?: string //静态文件的域名
-    inject?: string //自定义注入到页面的 HTML
-    props?: Record<string, any> //amis 属性
-    env?: Record<string, any> //amis 环境变量
+    title: string // Page title
+    host?: string // Domain name for static files
+    inject?: string // Custom HTML injected into the page
+    props?: Record<string, any> // amis properties
+    env?: Record<string, any> // amis environment variables
   })
 ```
 
-## 代码转换
+## Code Conversion
 
-`EaseAdmin` 提供了一个 `parser` 方法来将 `json` 转换为 `amis` 代码。该功能也内置在了后台的 `开发者` 工具中。
+`EaseAdmin` provides a `parser` method to convert `json` to `amis` code. This feature is also built into the `Developer` tool in the backend.
 
 ```typescript
 import parser from 'easeadmin/builder/parser'
@@ -140,7 +140,7 @@ const result = parser({"type":"container", "body":"Hello World"})
 console.log(result)
 ```
 
-转换的代码
+Converted Code
 
 ```typescript
 amis('container').body('Hello World')

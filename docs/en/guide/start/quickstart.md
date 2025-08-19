@@ -2,7 +2,7 @@
 
 Based on the `admin:create` code generation command, you can quickly create a fully functional CRUD page. Below, we'll demonstrate how to quickly create a user management panel.
 
-## Create Data Table
+## Create Database Table
 
 After installing `AdonisJS`, a `app/models/user.ts` model and a `database/migrations/1754734230094_create_users_table.ts` migration file are included by default. You can modify them as needed or skip this step.
 

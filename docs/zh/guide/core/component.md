@@ -97,7 +97,7 @@ import amis from 'easeadmin/builder/amis'
 import html from 'easeadmin/builder/html'
 
 // 给页面设置标题
-let page = amis('page').title('Weclome')
+let page = amis('page').title('Welcome')
 
 // 在页面上放置一个按钮
 page.body(amis('button').label('Hello World').level('primary'))

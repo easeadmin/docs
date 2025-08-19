@@ -40,7 +40,7 @@ node ace admin:install admin --migrate
 node ace serve --watch
 ```
 
-## 其他问题
+## 更新代码
 
 每次修改 `EaseAdmin` 代码后，都需要重新发布本地包
 

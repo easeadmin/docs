@@ -2,16 +2,16 @@
     {
         "type": "dir",
         "name": "start",
-        "label": "开始"
+        "label": "Start"
     },
     {
         "type": "dir",
         "name": "core",
-        "label": "基础"
+        "label": "Core"
     },
     {
         "type": "dir",
         "name": "resource",
-        "label": "资源"
+        "label": "Resource"
     }
 ]

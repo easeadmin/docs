@@ -1,8 +1,8 @@
-# Contributing Code
+# Contributing
 
 If you find that `EaseAdmin` lacks features you need, besides creating an `issue` and waiting for updates, the fastest way is to implement it yourself. This article will introduce how to install `EaseAdmin` in a local environment and run debugging.
 
-## Download Code
+## Download
 
 First, you need to fork the project to your own repository, then download it locally, switch to the development branch, and install dependencies.
 
@@ -40,7 +40,7 @@ node ace admin:install admin --migrate
 node ace serve --watch
 ```
 
-## Other Issues
+## Update
 
 Every time you modify `EaseAdmin` code, you need to republish the local package.
 

@@ -1,8 +1,8 @@
-# Upgrade Guide
+# Upgrade
 
 `EaseAdmin` will try to minimize the impact of version upgrades. Please back up your code and database before upgrading.
 
-## General Upgrade Steps
+## Upgrade Steps
 
 Get the latest framework code
 
