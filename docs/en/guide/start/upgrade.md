@@ -7,7 +7,7 @@
 Get the latest framework code
 
 ```
-npm update easeadmin
+npm install easeadmin
 ```
 
 Publish static resources

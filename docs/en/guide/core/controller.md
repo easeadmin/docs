@@ -84,3 +84,18 @@ You can view the [resource controller source code](https://github.com/easeadmin/
 | footerToolbar() | Build footer toolbar |
 | actions() | Build row action buttons |
 | operations() | Build row operation column |
+
+## Resource Controller Properties Table
+
+| Name | Default Value | Description |
+| :---------- | :----------------- |:----------------- |
+| showOperations | true | Show row operations |
+| showCreateButton | true | Show create button |
+| showDetailButton | true | Show detail button |
+| showEditButton | true | Show edit button |
+| showDeleteButton | true | Show delete button |
+| showBulkDeleteButton | true | Show bulk delete button |
+| showFilterToggler | true | Show filter toggler button |
+| showBulkActions | true | Show bulk actions toolbar |
+| repository | None | Resource repository |
+| defaultParams | { orderBy: 'id', orderDir: 'desc' } | Default request parameters |
