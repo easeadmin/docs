@@ -5,9 +5,8 @@
     "activeMatch": "/guide/"
   },
   {
-    "text": "版本日志",
-    "link": "/version",
-    "activeMatch": "/version"
+    "text": "演示",
+    "link": "http://demo.kmola.com/admin"
   },
   {
     "text": "更多",

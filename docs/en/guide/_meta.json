@@ -13,5 +13,10 @@
         "type": "dir",
         "name": "resource",
         "label": "Resource"
+    },
+    {
+        "type": "dir",
+        "name": "digging",
+        "label": "Digging"
     }
 ]

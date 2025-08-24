@@ -5,9 +5,8 @@
     "activeMatch": "/guide/"
   },
   {
-    "text": "Version",
-    "link": "/version",
-    "activeMatch": "/version"
+    "text": "Demo",
+    "link": "http://demo.kmola.com/admin"
   },
   {
     "text": "More",
