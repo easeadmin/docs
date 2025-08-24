@@ -55,9 +55,7 @@ import Controller from 'easeadmin/controllers/resource_controller'
 
 export default class quickEditController extends Controller{
     builder(){
-        const page = super.builder()
-        page.find('list').quickSaveApi('/api/quick/save')
-        return page
+        return super.builder().find('list').quickSaveApi('/api/quick/save')
     }
 }
 ```
@@ -83,7 +81,7 @@ amis('column_item').name('visible').type('mapping').label('是否可见').attr('
 amis('column_item').name('roles').label('角色').type('each').attr(
   'items', 
   amis('tag').label('${name}').displayMode('rounded').color('#4096ff')
-),
+)
 ```
 
 ## 更多

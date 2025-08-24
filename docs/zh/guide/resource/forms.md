@@ -1,11 +1,31 @@
 # 数据表单
 
-`amis` 提供了丰富的表单组件，主要用作数据提交和展示数据。
+数据表单提供了丰富的组件，来帮助你快速的构建 form 表单，更详细的表单组件使用方法请参考 [amis 文档](https://baidu.github.io/amis/zh-CN/components/form/index)
 
-## 基本用法
+## 基本使用
 
 ```typescript
-amis('input_text').name('text').label('文字输入'),
+amis('input_text').name('text').label('文字输入')
+amis('input_text').name('text').label('禁止编辑').disabled(true)
+amis('input_text').name('text').label('设置默认值').value('默认值')
+amis('input_text').name('text').label('设置占位符').placeholder('表单项占位说明')
+amis('input_text').name('text').label('设置描述').description('表单项说明')
+```
+
+## 不同边框风格
+
+```typescript
+amis('input_text').name('text').label('全边框').borderMode('full')
+amis('input_text').name('text').label('半边框').borderMode('half')
+amis('input_text').name('text').label('无边框').borderMode('none')
+```
+
+## 附加组件
+
+```typescript
+amis('input_text').name('text').label('添加附加组件').addOn(amis('button').label('搜索'))
+amis('input_text').name('text').label('设置可清除').clearable(true)
+amis('input_text').name('text').label('设置前后缀').prefix('$').suffix('元')
 ```
 
 ## 选择器
@@ -23,6 +43,14 @@ amis('input_image').name('avatar').label('上传头像').receiver('/api/upload/i
 amis('input_file').name('file').label('上传文件').receiver('/api/upload/file'),
 ```
 
-## 更多
+要求返回的格式为
 
-更多的表单组件请参考 [amis 文档](https://baidu.github.io/amis/zh-CN/components/form/index)
+```json
+{
+  "status": 0,
+  "msg": "",
+  "data": {
+    "value": "文件资源地址"
+  }
+}
+```

@@ -7,7 +7,7 @@
 获取最新框架代码
 
 ```
-npm update easeadmin
+npm install easeadmin
 ```
 
 发布静态资源 
