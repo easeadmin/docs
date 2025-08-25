@@ -1,6 +1,6 @@
 # 筛选器
 
-过滤器允许你使用自定义条件来限制数据查询查询的范围。
+筛选器允许你使用自定义条件来限制数据查询的范围。
 
 ## 常规使用
 
@@ -11,9 +11,9 @@ amis('input_text').name('id').label('ID').filter(QueryType.eq),
 amis('input_text').name('name').label('名称').filter(QueryType.like),
 ```
 
-## 过滤字段
+## 筛选字段
 
-除了在表单项中定义过滤字段外，你还可以在仓库中额外定义过滤字段，用于快速搜索和筛选。
+除了在表单项中定义筛选字段外，你还可以在仓库中额外定义筛选字段，用于快速搜索和筛选。
 
 ```typescript
 import Repository from 'easeadmin/repositories/resource_repository'
@@ -29,7 +29,7 @@ export default class userRepository extends Repository {
 }
 ```
 
-## 过滤条件
+## 筛选条件
 
 | 条件 | 说明 |
 | --- | --- |

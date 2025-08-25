@@ -1,6 +1,6 @@
 # 表格字段
 
-除了常规的字段展示，还支持丰富的列配置。
+除了常规的字段展示，还支持丰富的列配置。如需了解更多请参考 [amis crud 组件](https://baidu.github.io/amis/zh-CN/components/crud/)
 
 ## 基本用法
 
@@ -83,7 +83,3 @@ amis('column_item').name('roles').label('角色').type('each').attr(
   amis('tag').label('${name}').displayMode('rounded').color('#4096ff')
 )
 ```
-
-## 更多
-
-更多的配置项请参考 [amis 文档](https://baidu.github.io/amis/zh-CN/components/crud)

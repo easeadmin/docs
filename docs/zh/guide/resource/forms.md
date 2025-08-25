@@ -1,6 +1,6 @@
 # 数据表单
 
-数据表单提供了丰富的组件，来帮助你快速的构建 form 表单，更详细的表单组件使用方法请参考 [amis 文档](https://baidu.github.io/amis/zh-CN/components/form/index)
+数据表单提供了丰富的组件，来帮助你快速的构建 form 表单，更详细的表单组件使用方法请参考 [amis form 表单组件](https://baidu.github.io/amis/zh-CN/components/form/index)
 
 ## 基本使用
 
@@ -54,3 +54,19 @@ amis('input_file').name('file').label('上传文件').receiver('/api/upload/file
   }
 }
 ```
+
+## 表单校验
+
+字符串形式校验
+
+```typescript
+amis('input_text').name('text').label('文字输入').validations('isEmail,isRequired,minLength:6,maxLength:10')
+```
+
+也可以通过对象形式配置
+
+```typescript
+amis('input_text').name('text').label('数字输入').validations([{isNumeric:true,isRequired:true}])
+```
+
+更多校验规则请参考 [amis 普通表单项](https://baidu.github.io/amis/zh-CN/components/form/formitem)

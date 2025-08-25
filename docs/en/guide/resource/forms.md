@@ -54,3 +54,19 @@ The required return format is
   }
 }
 ```
+
+## Form Validation
+
+String form validation
+
+```typescript
+amis('input_text').name('text').label('Text Input').validations('isEmail,isRequired,minLength:6,maxLength:10')
+```
+
+You can also configure it through object form
+
+```typescript
+amis('input_text').name('text').label('Number Input').validations([{isNumeric:true,isRequired:true}])
+```
+
+For more validation rules, please refer to [amis form item](https://baidu.github.io/amis/en-US/components/form/formitem)

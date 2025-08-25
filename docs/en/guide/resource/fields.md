@@ -1,6 +1,6 @@
 # Table Fields
 
-In addition to regular field display, it also supports rich column configurations.
+In addition to regular field display, it also supports rich column configurations. For more details, please refer to [amis crud component](https://baidu.github.io/amis/en-US/components/crud/)
 
 ## Basic Usage
 
@@ -82,8 +82,3 @@ amis('column_item').name('roles').label('Roles').type('each').attr(
   'items', 
   amis('tag').label('${name}').displayMode('rounded').color('#4096ff')
 )
-```
-
-## More
-
-For more configuration items, please refer to the [amis documentation](https://baidu.github.io/amis/en-US/components/crud)
