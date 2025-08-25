@@ -85,3 +85,17 @@ export default class AdminController extends Controller {
   protected repository = new AdminRepository
 }
 ```
+
+## Deployment Configuration
+
+Note that the `HOST` configuration, by default, is `localhost`. If you are deploying on a server, you need to set the `HOST` configuration to 0.0.0.0.
+
+```typescript
+TZ=UTC
+PORT=80
+HOST=0.0.0.0
+LOG_LEVEL=info
+APP_KEY=Dy_9_75ka8PjHhW3mqFn5vouE
+NODE_ENV=production
+SESSION_DRIVER=cookie
+```

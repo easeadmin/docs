@@ -41,3 +41,17 @@ export default class AdminController extends Controller {
     }
 }
 ```
+
+## 部署配置
+
+要注意 `HOST` 配置，默认是 `localhost` 如果是在服务器上部署，需要将 `HOST` 配置为 0.0.0.0 地址。
+
+```typescript
+TZ=UTC
+PORT=80
+HOST=0.0.0.0
+LOG_LEVEL=info
+APP_KEY=Dy_9_75ka8PjHhW3mqFn5vouE
+NODE_ENV=production
+SESSION_DRIVER=cookie
+```
