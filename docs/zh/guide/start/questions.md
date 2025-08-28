@@ -55,3 +55,22 @@ APP_KEY=Dy_9_75ka8PjHhW3mqFn5vouE
 NODE_ENV=production
 SESSION_DRIVER=cookie
 ```
+
+## 使用 Cookie 会话
+
+如果你在 `inProduction` 环境中使用 Cookie 会话，那么该会话只能通过 `HTTPS` 协议传输。如果您需要通过 `HTTP` 协议传输，可以将 `secret` 标志设置为 `false` 来解决此问题。
+
+会话包的配置存储在 `config/session.ts` 文件中。
+
+```typescript
+export default defineConfig({
+  store: env.get('SESSION_DRIVER'),
+
+  cookie: {
+    path: '/',
+    httpOnly: true,
+    secure: false,
+    sameSite: 'lax',
+  }
+})
+```

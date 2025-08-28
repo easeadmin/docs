@@ -99,3 +99,22 @@ APP_KEY=Dy_9_75ka8PjHhW3mqFn5vouE
 NODE_ENV=production
 SESSION_DRIVER=cookie
 ```
+
+## Useing cookie sessions
+
+If you use cookie sessions `inProduction` environment, the session can only be transmitted via `HTTPS` protocol. If you need to transmit it over `HTTP` protocol, you can set the `secret` flag to `false` to solve this issue.
+
+The configuration for the session package is stored inside the `config/session.ts` file.
+
+```typescript
+export default defineConfig({
+  store: env.get('SESSION_DRIVER'),
+
+  cookie: {
+  path: '/',
+  httpOnly: true,
+  secure: false,
+  sameSite: 'lax',
+  }
+})
+```

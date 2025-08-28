@@ -35,4 +35,16 @@ export default defineConfig({
       },
     ],
   },
+  builderConfig: {
+    html: {
+      tags: [
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://hm.baidu.com/hm.js?72868bb68244350d9257dc4e44db15a5'
+          }
+        }
+      ]
+    }
+  },
 });
